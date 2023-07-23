@@ -1,0 +1,5 @@
+/* created new file and used the @import followed by where the two css files
+are located */
+
+@import url("button.css");
+@import url("styles.css");
