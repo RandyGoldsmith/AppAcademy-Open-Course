@@ -1,71 +1,66 @@
-html, body {
-    font-family: sans-serif;
+html,
+body {
+  font-family: sans-serif;
 }
 
 .container {
-    background-color: #2b2d2f;
-    position: relative;
+  background-color: #2b2d2f;
+  position: relative;
 }
 
 .element {
-    box-sizing: border-box;
-    display: inline-block;
-    width: 100px;
-    height: 280px;
-    font-size: 36px;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100px;
+  height: 280px;
+  font-size: 36px;
 }
 
 #yellow-box {
-    background-color: #ffff00;
-    /* Fill these in
-    position: ;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: ;
+  background-color: #ffff00;
+  position: absolute;
+  bottom: 0;
+  top: 120px;
+  left: 40px;
+  z-index: 1;
 }
 
 #pink-box {
-    background-color: #ff69b4;
-    /* Fill these in
-    position: ;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: ;
+  background-color: #ff69b4;
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  right: 0;
+  top: 160px;
+  z-index: 2;
 }
 
 #blue-box {
-    background-color: #00eeee;
-    /* Fill these in
-    position: ;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: ;
+  background-color: #00eeee;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 0;
+  top: 200px;
+  z-index: 3;
 }
 
 #red-box {
-    background-color: #ff0000;
-    /* Fill these in
-    position: ;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: ;
+  background-color: #ff0000;
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  right: 0;
+  top: 240px;
+  z-index: 4;
 }
 
 #orange-box {
-    background-color: #ffa500;
-    /* Fill these in
-    position: ;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: ;
+  background-color: #ffa500;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 280px;
+  z-index: 5;
 }
