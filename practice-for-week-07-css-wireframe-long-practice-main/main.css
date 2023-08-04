@@ -1,0 +1,86 @@
+.nav__upper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.upper__left {
+  padding-left: 10px;
+}
+
+.upper__right a {
+  text-decoration: none;
+  color: green;
+}
+
+.sign-in {
+  padding-right: 10px;
+}
+
+.get-started {
+  border: 2px solid green;
+  border-radius: 5px;
+  padding: 7.5px 15px;
+}
+
+.nav__lower {
+  margin-top: 30px;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__lower a,
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.content {
+  padding-top: 20px;
+  width: 600px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.content p {
+  font-size: 18px;
+}
+
+.external_links a {
+  color: blue;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin-top: 50px;
+  padding: 0 250px;
+}
+
+.grid a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.about {
+  padding-right: 25px;
+}
+
+.help {
+  padding-right: 15px;
+}
+
+.footer__left {
+  padding-left: 15px;
+}
