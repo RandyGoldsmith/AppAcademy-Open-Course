@@ -29,11 +29,15 @@ function fourthStep(input) {
 }
 
 function fifthStep(input) {
-  // Your code here
+  let obj = {};
+  input.forEach((ele) => {
+    obj[ele[0]] = ele[1];
+  });
+  return obj;
 }
 
 function parseBody(str) {
-  // Your code here
+  return fifthStep(fourthStep(thirdStep(secondStep(firstStep(str)))));
 }
 
 /******************************************************************************/

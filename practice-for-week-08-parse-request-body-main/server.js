@@ -5,7 +5,6 @@ let server;
 
 server = http.createServer((req, res) => {
   let reqBody = "";
-  console.log(req.method, req.url);
   res.setHeader("Content-Type", "application/x-www-form-urlencoded");
 
   req.on("data", (data) => {
@@ -13,7 +12,8 @@ server = http.createServer((req, res) => {
   });
 
   req.on("end", () => {
-    parseBody(reqBody);
+    req.body = parseBody(reqBody);
+    sendFormPage(req, res);
   });
 });
 
