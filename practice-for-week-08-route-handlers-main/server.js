@@ -1,4 +1,4 @@
-const http = require('http');
+const http = require("http");
 
 let nextDogId = 1;
 
@@ -34,15 +34,42 @@ const server = http.createServer((req, res) => {
     // Do not edit above this line
 
     // define route handlers here
+    if (req.method === "GET" && req.url === "/") {
+      res.statusCode = 200;
+      res.setHeader("Content-Type", "text/plain");
+      return res.end("Dog Club");
+    }
 
+    if (req.method === "GET" && req.url === "/dogs") {
+      res.statusCode = 200;
+      res.setHeader("Content-Type", "text/plain");
+      return res.end("Dogs index");
+    }
+
+    if (req.method === "GET" && req.url === "/dogs/new") {
+      res.statusCode = 200;
+      res.setHeader("Content-Type", "text/plain");
+      res.end("Dog create form page");
+    }
+
+    if (req.method === "GET" && req.url.startsWith("/dogs/")) {
+      let urlParts = req.url.split("/");
+
+      if (urlParts.length === 3) {
+        let dogId = urlParts[2];
+        res.statusCode = 200;
+        res.setHeader("Content-Type", "text/plain");
+        return res.end("Dog details for dogId:" + `${dogId}`);
+      }
+    }
     // Do not edit below this line
     // Return a 404 response when there is no matching route handler
     res.statusCode = 404;
-    res.setHeader('Content-Type', 'text/plain');
-    return res.end('No matching route handler found for this endpoint');
+    res.setHeader("Content-Type", "text/plain");
+    return res.end("No matching route handler found for this endpoint");
   });
 });
 
 const port = 5000;
 
-server.listen(port, () => console.log('Server is listening on port', port));
+server.listen(port, () => console.log("Server is listening on port", port));
