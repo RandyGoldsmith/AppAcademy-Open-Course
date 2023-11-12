@@ -62,6 +62,11 @@ const server = http.createServer((req, res) => {
         return res.end("Dog details for dogId:" + `${dogId}`);
       }
     }
+
+    if(req.method === "POST" && req.url === '/dogs') {
+      res.statusCode = 302;
+      
+    }
     // Do not edit below this line
     // Return a 404 response when there is no matching route handler
     res.statusCode = 404;
