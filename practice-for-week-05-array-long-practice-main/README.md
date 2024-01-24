@@ -16,7 +16,7 @@ O(n) Time.
 Example:
 
 ```js
-const arr = [7, 5, 2, 3, 4, 1]; 
+const arr = [7, 5, 2, 3, 4, 1];
 findMinimum(arr); // => 1
 ```
 
@@ -27,7 +27,7 @@ Given an array of numbers, return the running sum of its elements.
 Example:
 
 ```js
-const arr = [1,2,3,4]; 
+const arr = [1, 2, 3, 4];
 runningSum(arr); // => [1,3,6,10]
 ```
 
@@ -39,7 +39,7 @@ characters
 Example:
 
 ```js
-const arr = ['ab', 'abc', 'a', 'abcd']; 
+const arr = ["ab", "abc", "a", "abcd"];
 evenNumOfChars(arr); // => 2
 ```
 
@@ -51,7 +51,7 @@ smaller than the current element at each position.
 Example:
 
 ```js
-const arr = [8,1,2,2,3];
+const arr = [8, 1, 2, 2, 3];
 smallerThanCurr(arr); // => [4,0,1,1,3]
 ```
 
@@ -64,7 +64,7 @@ to the target value.
 Example:
 
 ```js
-const arr = [4, 2, 3, 6, 9]; 
+const arr = [4, 2, 3, 6, 9];
 twoSum(arr, 10); // => True
 
 const arr2 = [4, 2, 3, 6, 9];
@@ -94,5 +94,5 @@ Example:
 
 ```js
 const arr = [2, 5, 1, 3, 4, 7];
-shuffle(arr); // => [2, 3, 5, 4, 1, 7] 
+shuffle(arr); // => [2, 3, 5, 4, 1, 7]
 ```
